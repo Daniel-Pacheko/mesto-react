@@ -29,7 +29,7 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick }) {
             .catch((err) => {
                 errorApi(err);
             });
-    });
+    }, []);
 
 
     return (
