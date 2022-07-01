@@ -19,6 +19,7 @@
 @import url(./blocks/list/__place-photo/list__place-photo.css);
 @import url(./blocks/list/__caption/list__caption.css);
 @import url(./blocks/list/__place-delete/list__place-delete.css);
+@import url(./blocks/list/__place-delete/_hidden/list__place-delete_hidden.css);
 @import url(./blocks/list/__place-title/list__place-title.css);
 @import url(./blocks/list/__place-description/list__place-description.css);
 @import url(./blocks/list/__place-like/list__place-like.css);

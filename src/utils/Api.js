@@ -88,13 +88,23 @@ class Api {
       .then((res) => this._checkResult(res))
   }
 
+  changeLikeStatus(cardId, like) {
+    return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+      method: like ? 'PUT' : 'DELETE',
+      headers: this._headers,
+    })
+      .then((res) => this._checkResult(res))
+  }
+
 };
+
+
 
 const api = new Api({
   url: 'https://mesto.nomoreparties.co/v1/cohort36',
   headers: {
-      authorization: '86559a47-cdf8-4862-a98f-377a7ae7e478',
-      'Content-Type': 'application/json'
+    authorization: '86559a47-cdf8-4862-a98f-377a7ae7e478',
+    'Content-Type': 'application/json'
   }
 });
 
